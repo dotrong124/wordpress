@@ -33,7 +33,6 @@
           while (have_posts()) : the_post();
             $pdf_file = get_field('pdf_file'); ?>
             <div class="post">
-              <h3 style="display: none;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <?php
               if ($pdf_file): ?>
                 <h3><a href="<?php echo esc_url($pdf_file); ?>"><?php the_title(); ?></a></h3>
