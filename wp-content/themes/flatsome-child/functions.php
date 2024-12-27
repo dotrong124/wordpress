@@ -42,7 +42,7 @@ add_filter('pre_get_posts', 'filter_search_by_custom_post_type');
 function custom_search_template_for_huongdansudung2($template)
 {
   if (is_search() && !is_admin() && isset($_GET['post_type']) && $_GET['post_type'] == 'huong-dan-su-dung2') {
-    $new_template = locate_template(array('search-huong-dan-su-dung2.php'));
+    $new_template = locate_template(array('archive-huong-dan-su-dung2.php'));
     if (!empty($new_template)) {
       return $new_template;
     }
